@@ -1,0 +1,29 @@
+spring:
+  ai:
+    mcp:
+      client:
+        enabled: true
+        id: time-zone-client
+        streamable-http:
+          connections:
+            mcp-server-time:
+              url: http://localhost:8080/mcp
+      annotation-scanner:
+        enabled: true
+
+    openai:
+      api-key: 
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: openai/gpt-oss-120b
+
+        
+server:
+  port: 9000
+
+logging:
+  level:
+    org.springframework.ai.mcp: DEBUG
+    org.springaicommunity.mcp: DEBUG
+

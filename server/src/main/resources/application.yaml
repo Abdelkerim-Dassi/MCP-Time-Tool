@@ -1,0 +1,16 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: mcp-server-time
+        version: 0.0.1
+        protocol: streamable
+        annotation-scanner:
+          enabled: true
+            
+server:
+  port: 8080
+
+logging:
+  level:
+    io.modelcontextprotocol.server: DEBUG
